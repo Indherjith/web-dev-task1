@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+  span::before {
+    content: '';
+    width: 10%;
+    height: 75px;
+    background-color:  rgb(120, 120, 230);;
+    position: absolute;
+    z-index: -1;
+    top: 75px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+    left: 90%;    
+  }
+  
+
+.title{
+    width: 200px;
+    text-align: center;
+    margin: 50px auto;
+    margin-top: 100px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(120, 120, 230);
+    border-radius: 5px;
+}
+
+.description{
+    width: 80%;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: auto;
+    text-align: center;
+}
+
+
+.dashed{
+    margin:30px auto;
+    width: 70%;
+    border: 1px dashed;
+}
+
+.team{
+    margin: 50px 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.team_title, .Dev_title{
+    width: 400px;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 10px 5px;
+    background-color: rgb(120, 120, 230);
+    border-radius: 5px;
+}
+
+.management{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow:wrap-reverse;
+    background-image: url("https://continentalasset.mw/wp-content/uploads/2020/01/financial_services-740x440.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:darken;
+}
+
+
+.development{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow:wrap;
+}
+
+.member{
+    width: 27%;
+    text-align: center;
+    margin: 20px 10px;
+    scale: 1;
+    transition: 0.5s;
+}
+
+.members{
+    width: 22%;
+    text-align: center;
+    margin: 20px 10px;
+    scale: 1;
+    transition: 0.5s;
+}
+
+.m_img{
+    object-fit: cover;
+    width: 80%;
+    height: 75%;
+    margin: 10px;
+    border-radius: 50%;
+}
+.m_name{
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 10ch;
+} 
+.m_position{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(248, 250, 143);
+}
+.ms_name{
+    margin: 5px;
+    font-size: 20px;
+    color: grey;
+    text-shadow: 10ch;
+} 
+.ms_position{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: lightblue;
+}
+
+.member:hover, .members:hover{
+    scale: 1.2;
+    transition: 0.5s;
+    border-radius: 15px;
+    border-radius: 50%;
+}
+
+@media all and (max-width:1096px){
+    .member{
+        width: 35%;
+    }
+
+    .members{
+        width: 30%;
+    }
+    .m_img{
+        object-fit: cover;
+        width: 90%;
+        height: 70%;
+        border-radius: 50%;
+    }
+}
+
+@media all and (max-width:648px){
+    .member{
+        width: 35%;
+    }
+
+    .members{
+        width: 35%;
+    }
+    .m_img{
+        object-fit: cover;
+        width: 90%;
+        height: 55%;
+        border-radius: 50%;
+    }
+}
+
+
+@media all and (max-width:496px){
+
+    .title{
+        margin-top: 50px;
+    }
+    .description{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .team_title, .Dev_title{
+        width: 280px;
+        font-size: 18px;
+    }
+    .management, .development{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .member, .members{
+        margin: 10px 0px;
+    }
+    .member{
+        width: 27%;
+    }
+    .members{
+        width: 22%;
+    }
+    .m_name,.ms_name{
+        margin: 0px;
+        font-size: 15px;
+    }
+    .m_position, .ms_position{
+        margin: 0px;
+        font-size: 10px;
+    }
+    .m_img{
+        object-fit: cover;
+        width: 90%;
+        height: 55%;
+        border-radius: 50%;
+    }
+    span::before {
+        content: '';
+        width: 15%;
+        height: 65px;
+        background-color:  rgb(120, 120, 230);;
+        position: absolute;
+        z-index: -1;
+        top: 40px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+        left: 85%;    
+      }
+}
